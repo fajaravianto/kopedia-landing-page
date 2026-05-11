@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;700;800&display=swap');
+
+/* Sintaks pemanggilan Tailwind CSS v4 yang baru */
+@import "tailwindcss";
+
+@import 'aos/dist/aos.css';
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Memaksa seluruh website menggunakan font ini */
+
+body {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
