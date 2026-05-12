@@ -124,73 +124,50 @@
 
 <!-- ================= DIGITAL PRODUCTS SECTION ================= -->
   <!-- Base background murni Cosmic Orange -->
-  <section id="digital-products" class="relative w-full py-24 bg-[#D56D43] overflow-hidden z-0">
+  <section id="digital-products" class="relative w-full py-20 px-6 md:px-16 z-20 bg-[#D56D43]">
+  <div class="max-w-6xl mx-auto">
     
-    <!-- 1. Estetika Geometris Presisi (Figma Look) -->
-    <!-- Bentuk gelap (Dark Brown/Black) yang hanya ada di sisi kanan atas hingga tengah, persis seperti Figma -->
-    <div class="absolute top-0 right-0 w-full h-full bg-[#141414] [clip-path:polygon(45%_0,100%_0,100%_100%,85%_100%)] z-[-1] opacity-90"></div>
-    
-    <!-- Gradien halus untuk meleburkan bentuk tajam di atas agar lebih natural -->
-    <div class="absolute inset-0 bg-linear-to-b from-transparent via-[#D56D43]/10 to-[#D56D43] z-[-1]"></div>
+    <div class="text-center mb-12 md:mb-16" data-aos="fade-up">
+      <h2 class="text-4xl md:text-5xl font-extrabold text-white">Digital Products</h2>
+    </div>
 
-    <!-- Content Container -->
-    <div class="relative z-10 w-full px-6 md:px-16 max-w-7xl mx-auto flex flex-col items-center">
-      
-      <!-- Section Title -->
-      <h2 data-aos="fade-up" class="text-4xl md:text-5xl font-extrabold text-white mb-12 md:mb-16 tracking-tight drop-shadow-md">
-        Digital Products
-      </h2>
+    <div data-aos="zoom-in" class="relative w-full bg-[#141414] rounded-none p-8 md:p-12 lg:p-16 flex flex-col md:flex-row items-center shadow-2xl min-h-87.5 transition-all duration-300">
 
-      <!-- Main Product Image Showcase (Monitor Mockup) -->
-      <div data-aos="zoom-in" data-aos-duration="1000" class="w-full max-w-5xl mx-auto rounded-xl border-[3px] border-[#D56D43] p-1 md:p-2 bg-[#D56D43]/10 shadow-[0_30px_60px_-15px_rgba(0,0,0,0.75)] relative z-20">
-        
-        <!-- Layar Monitor -->
-        <div data-aos="fade-up" data-aos-delay="200" class="relative w-full aspect-video md:h-150 rounded bg-[#141414] overflow-hidden">
-          
-          <!-- SWIPER CONTAINER -->
-          <swiper-container class="w-full h-full" pagination="true" pagination-clickable="true" navigation="true" loop="true" autoplay-delay="2500" speed="500">
-            
-         <!-- Slide 1: DigiCore -->
-            <swiper-slide>
-              <img src="digicore.png" alt="DigiCore" class="w-full h-full object-cover object-top">
-            </swiper-slide>
-
-            <!-- Slide 2: Irs Market -->
-            <swiper-slide>
-              <img src="irsmarket.png" alt="IRS Market" class="w-full h-full object-cover object-top">
-            </swiper-slide>
-
-            <!-- Slide 3: Software Pulsa IRSX -->
-            <swiper-slide>
-              <img src="softwarepulsairsx.png" alt="Software Pulsa IRSX" class="w-full h-full object-cover object-top">
-            </swiper-slide>
-
-             <!-- Slide 4: Simantek -->
-            <swiper-slide>
-              <img src="simantek.png" alt="Simantek" class="w-full h-full object-cover object-top">
-            </swiper-slide>
-
-          </swiper-container>
-
-        </div>
+      <div class="w-full md:w-2/5 flex justify-center items-center mb-8 md:mb-0">
+        <img [src]="activeProduct.logo" [alt]="activeProduct.name" class="max-h-24 md:max-h-32 object-contain animate-fade-in">
       </div>
 
-      <!-- Partners / Ecosystem Logos -->
-      <!-- PERBAIKAN: Tanpa background gelap, tanpa grayscale. Logo full-color langsung di atas warna Cosmic Orange -->
-    <div class="w-full mt-16 md:mt-24 relative z-20">
-        
-        <div class="grid grid-cols-2 md:flex md:flex-wrap justify-items-center justify-center items-center gap-x-4 gap-y-8 md:gap-16">
-          
-          <img src="simantek-logo.png" alt="Simantek" class="h-9 md:h-12 object-contain hover:scale-105 transition-transform duration-300 drop-shadow-sm">
-          <img src="irs-logo.png" alt="IRS System" class="h-9 md:h-12 object-contain hover:scale-105 transition-transform duration-300 drop-shadow-sm">
-          <img src="irsmarket-logo.png" alt="IRS Market" class="h-9 md:h-12 object-contain hover:scale-105 transition-transform duration-300 drop-shadow-sm">
-          <img src="digicore-logo.png" alt="DigiCore" class="h-9 md:h-12 object-contain hover:scale-105 transition-transform duration-300 drop-shadow-sm">
-          
-        </div>
-    </div>
+      <div class="hidden md:block w-px h-48 bg-[#D56D43] mx-8 lg:mx-12 opacity-80"></div>
+      <div class="block md:hidden w-full h-px bg-[#D56D43] my-6 opacity-80"></div>
+
+      <div class="w-full md:w-3/5 text-center md:text-left flex flex-col justify-center">
+        <h3 class="text-2xl md:text-3xl font-bold text-white mb-4 animate-fade-in">{{ activeProduct.name }}</h3>
+        <p class="text-gray-300 text-base md:text-lg leading-relaxed font-light animate-fade-in">
+          {{ activeProduct.desc }}
+        </p>
+      </div>
 
     </div>
-  </section>
+
+    <div data-aos="fade-up" data-aos-delay="200" class="mt-12 md:mt-16 w-full">      
+      
+      <div class="flex flex-wrap justify-center items-center gap-8 md:gap-16 lg:gap-24 w-full">
+        
+        @for (product of digitalProducts; track product.id) {
+          
+          <button (click)="selectProduct(product)"
+                  class="bg-transparent transition-all duration-300 outline-none cursor-pointer flex items-center justify-center border-none p-0"
+                  [ngClass]="activeProduct.id === product.id ? 'scale-110 opacity-100 grayscale-0 drop-shadow-md' : 'opacity-60 hover:opacity-100 hover:scale-105 grayscale hover:grayscale-0'">
+            <img [src]="product.logo" [alt]="product.name" class="h-10 md:h-12 lg:h-14 w-auto object-contain">
+          </button>
+
+        }
+      </div>
+
+    </div>
+
+  </div>
+</section>
 
   <!-- ================= CUSTOMERS & PARTNERS SECTION ================= -->
   <section id="customers-partners" class="w-full py-24 bg-[#141414] text-white border-t border-white/5">
