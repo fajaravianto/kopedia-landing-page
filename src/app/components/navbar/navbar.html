@@ -6,13 +6,15 @@
   </div>
 
   <ul class="hidden md:flex space-x-10 text-[15px] font-semibold items-center">
-    <li class="cursor-pointer hover:text-[#D56D43] transition-colors">Home</li>
-    <li>
-      <a href="#digital-products" class="cursor-pointer hover:text-[#D56D43] transition-colors block">Products</a>
+    <li class="cursor-pointer hover:text-[#D56D43] transition-colors">
+      <a (click)="goToHome()" class="cursor-pointer hover:text-[#D56D43] transition-colors">Home</a>
+    </li>
+    <li class="cursor-pointer hover:text-[#D56D43] transition-colors">
+      <a (click)="scrollTo('digital-products')" class="cursor-pointer hover:text-[#D56D43] transition-colors">Products</a>
     </li>
     <li class="cursor-pointer hover:text-[#D56D43] transition-colors">Ecosystem</li>
     <li>
-      <a href="#customers-partners" class="cursor-pointer hover:text-[#D56D43] transition-colors block">Customers</a>
+      <a (click)="scrollTo('customers-partners')" class="cursor-pointer hover:text-[#D56D43] transition-colors">Customers</a>
     </li>
     <li class="cursor-pointer hover:text-[#D56D43] transition-colors flex items-center gap-1">
       <a (click)="scrollTo('help-center')" class="cursor-pointer hover:text-[#D56D43] transition-colors">Help</a>

@@ -1,0 +1,80 @@
+Kebijakan Privasi
+1. PENDAHULUAN
+
+Dalam rangka menjaga keamanan dan kenyamanan Pengguna, Kopedia berkomitmen untuk melindungi dan menjaga informasi/data yang sejalan dengan ketentuan dalam Undang-Undang Nomor 27 Tahun 2022 tentang Perlindungan Data Pribadi. Kebijakan Privasi ini merupakan standar yang diterapkan oleh Kopedia dalam melakukan pemrosesan atas Data Pribadi Pengguna dengan tetap memperhatikan prinsip-prinsip pemrosesan Data Pribadi sesuai dengan ketentuan yang berlaku. Sehingga dengan mengakses, mendaftar dan menggunakan Kopedia, Pengguna mengakui dan menyetujui bahwa Pengguna menerima praktik, persyaratan, dan/atau kebijakan yang diuraikan dalam Kebijakan Privasi ini, dan Pengguna dengan ini mengizinkan Kopedia untuk mengumpulkan, menggunakan, mengungkapkan dan/atau mengolah data pribadi Pengguna seperti yang dijelaskan di sini.
+
+2. RUANG LINGKUP DATA PRIBADI
+
+Data pribadi yang dikumpulkan oleh Kopedia sehubungan dengan layanan Kopedia, meliputi Data Pribadi yang bersifat spesifik maupun yang bersifat umum, seperti:​
+
+Data pribadi yang bersifat umum
+– Nama
+– Email
+– Nomor Handphon
+– Nomor Rekening
+– Nomor dompet digital (E-Wallet)
+3. PEROLEHAN DATA 
+
+Kopedia memperoleh dan mengumpulkan Data Pribadi melalui berbagai sarana, antara lain:
+
+a. Situs/Mobile Web
+Kopedia dapat memperoleh dan mengumpulkan Data Pribadi dari perangkat yang Pengguna gunakan pada saat mengakses Situs/Mobile Web Kopedia dan Pengguna maupun Tenant menjamin bahwa data yang diberikan kepada Kopedia adalah data Pengguna atau Tenant yang yang sah menurut Undang-Undang dan berhak untuk menggunakan sistem Kopedia. 
+
+b. Aktivitas Transaksi
+Kopedia dapat memperoleh dan mengumpulkan Data Pribadi atas aktivitas transaksi yang Pengguna lakukan pada saat bertransaksi di Situs/Mobile Web Kopedia
+
+c. Kopedia tidak berhak melakukan perubahan data yang diberikan oleh Pengguna maupun Tenant tanpa persetujuan dan pernyataan baik secara lisan maupun tertulis dari Tenant maupun pengguna Kopedia. 
+
+4. TUJUAN MELAKUKAN PEMROSESAN DATA PRIBADI
+
+Kopedia akan melakukan pemrosesan atas Data Pribadi yang diperoleh maupun dikumpulkan oleh Kopedia dengan tujuan:
+
+a. Menjalankan prinsip Customer Due Diligence (CDD) sesuai ketentuan hukum yang berlaku;
+
+b. Kepatuhan terhadap ketentuan hukum yang berlaku termasuk namun tidak terbatas pada Anti  Pencucian Uang, Pencegahan Pendanaan Terorisme, dan Pencegahan Pendanaan Proliferasi Senjata Pemusnah Massal (APU-PPT dan PPPSPM);
+
+c. Menyelesaikan setiap permasalahan terkait akses Pengguna terhadap layanan Kopedia
+
+d. Menindaklanjuti setiap keluhan atas layanan Kopedia
+
+e. Evaluasi, peningkatan, dan/atau pembaruan fitur layanan Kopedia dari waktu ke waktu
+
+f. Penawaran iklan/promosi maupun pemasaran atas layanan Kopedia
+
+g. Tujuan-tujuan lainnya selama diizinkan atau diwajibkan oleh ketentuan hukum yang berlaku.
+
+5. PENGUNGKAPAN DATA PRIBADI
+
+Kopedia dapat mengungkapkan Data Pribadi Pengguna kepada pihak lainnya yang bekerja sama dengan Kopedia untuk melaksanakan tujuan pemrosesan Data Pribadi sebagaimana dimaksud dalam ketentuan Nomor 4 Kebijakan Privasi ini. Dalam hal Kopedia mengungkapkan Data Pribadi Pengguna kepada pihak lainnya yang bekerja sama dengan Kopedia, Kopedia akan senantiasa meminta kepada  pihak lainnya yang bekerja sama dengan Kopedia untuk menjaga kerahasiaan dan keamanan atas Data Pribadi Pengguna sesuai dengan ketentuan yang berlaku.
+
+6. HAK SUBJEK DATA PRIBADI
+
+Kopedia berkomitmen untuk memenuhi hak Pengguna sebagai Subjek Data Pribadi untuk mendapatkan informasi mengenai Data Pribadi Pengguna yang telah dikumpulkan dan diproses oleh Kopedia. Pengguna dapat meminta kepada Kopedia untuk memperbaiki, melengkapi, memperbarui, atau menghapus Data Pribadi Pengguna yang berada dibawah kendali Kopedia dengan tetap memperhatikan ketentuan hukum yang berlaku. Namun demikian, Kopedia dapat menolak permintaan Pengguna antara lain apabila jika diperkenankan menurut ketentuan hukum yang berlaku atau permintaan Pengguna bertentangan dengan kepentingan hukum yang berlaku.
+
+7. PENYIMPANAN DATA PRIBADI
+
+Kopedia melakukan penyimpanan data sesuai dengan ketentuan retensi penyimpanan data di Kopedia. Sebagai contoh, Kopedia akan menyimpan Data Pribadi Pengguna dalam jangka waktu tertentu sejak Pengguna berinteraksi dengan Kopedia. Kopedia mungkin dapat menyimpan Data Pribadi Pengguna lebih lama dari batas waktu yang ditentukan jika hal tersebut diperlukan untuk kebutuhan hukum, membantu mendeteksi kejahatan, menjawab permintaan regulator atau aparat yang berwenang, dan hal lainnya. Data Pribadi Pengguna disimpan selama tujuan pengumpulannya masih diperlukan untuk tujuan hukum atau kepentingan bisnis lainnya. Jika Kopedia tidak membutuhkan lagi informasi terkait Data Pribadi Pengguna, Kopedia dapat menghapus Data Pribadi Pengguna sesuai dengan ketentuan yang berlaku di Kopedia.
+
+8. PENGAMANAN DATA PRIBADI
+
+Kopedia menggunakan berbagai cara untuk menjaga Data Pribadi Pengguna tetap aman dan terlindungi, seperti penggunaan teknologi enkripsi dan bentuk keamanan lainnya. Di samping itu, Kopedia juga mewajibkan pihak lain yang bekerja sama dengan Kopedia untuk patuh dan menaati seluruh ketentuan yang berlaku terkait perlindungan Data Pribadi dan menerapkan langkah-langkah pengamanan dalam melakukan pemrosesan Data Pribadi.
+
+9. PENGHAPUSAN AKUN
+
+Kopedia memiliki fitur hapus akun yang dapat digunakan oleh pengguna dengan cara menghubungi Customer Service  Kopedia
+
+10. FORCE MAJEURE
+
+Kopedia tidak bertanggung jawab atas kegagalan dalam melaksanakan kewajibannya yang diatur dalam Kebijakan Privasi ini apabila kegagalan tersebut disebabkan oleh kejadian di luar kendali wajar Kopedia (Force Majeure). 
+
+Kejadian tersebut termasuk namun tidak terbatas pada: 
+
+Bencana alam (gempa bumi, banjir, kebakaran, dll);
+Wabah penyakit, epidemi atau pandemi;
+Perang, kerusuhan dan aksi terorisme;
+Kebijakan Pemerintah atau peraturan baru yang menghambat operasional layanan;
+pemadaman listrik dalam skala besar;
+Gangguan keamanan siber (cyber attack) di luar kendali sistem proteksi yang wajar
+Selama masa Force Majeure Kopedia akan mengambil langkah-langkah yang wajar untuk meminimalkan dampak yang ditimbulkan dan berupaya menjaga layanan serta perlindungan terhadap Data Pribadi Pengguna, Kopedia akan memberitahukan kepada Pengguna apabila kejadian Force Majeure berdampak signifikan terhadap layanan. 
+
+11. PERUBAHAN KEBIJAKAN PRIVASIKopedia dapat mengubah, melengkapi, dan/atau mengganti Kebijakan Privasi ini dari waktu ke waktu untuk memastikan bahwa Kebijakan Privasi ini sejalan dengan prosedur dan praktik yang dijalankan oleh Kopedia dalam melakukan pemrosesan Data Pribadi. Kopedia akan menyediakan Kebijakan Privasi terkini melalui Situs/Mobile Web di kopedia.simantek.id
