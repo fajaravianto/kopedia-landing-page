@@ -38,12 +38,12 @@
   <div class="absolute top-full left-0 w-full bg-[#D56D43]/95 backdrop-blur-xl border-b border-white/10 md:hidden flex flex-col items-center py-10 space-y-8 shadow-2xl transition-all duration-300 origin-top"
        [class.hidden]="!isMobileMenuOpen">
 
-    <a href="#" class="text-white text-lg font-semibold hover:text-[#141414] transition-colors" (click)="toggleMobileMenu()">Home</a>
-    <a href="#digital-products" class="text-white text-lg font-semibold hover:text-[#141414] transition-colors" (click)="toggleMobileMenu()">Products</a>
-    <a (click)="goToEcosystem()" class="block text-center cursor-pointer hover:text-white transition-colors py-2">Ecosystem</a>
-    <a href="#customers-partners" class="text-white text-lg font-semibold hover:text-[#141414] transition-colors" (click)="toggleMobileMenu()">Customers</a>
+    <a (click)="goToHome()" class="text-white text-lg font-semibold hover:text-[#141414] transition-colors" (click)="toggleMobileMenu()">Home</a>
+    <a (click)="scrollTo('digital-products')" class="text-white text-lg font-semibold hover:text-[#141414] transition-colors" (click)="toggleMobileMenu()">Products</a>
+    <a (click)="goToEcosystem()" class="text-white text-lg font-semibold hover:text-[#141414] transition-colors">Ecosystem</a>
+    <a (click)="scrollTo('customers-partners')" class="text-white text-lg font-semibold hover:text-[#141414] transition-colors" (click)="toggleMobileMenu()">Customers</a>
 
-    <a href="#" class="flex items-center gap-2 text-white text-lg font-semibold hover:text-[#141414] transition-colors" (click)="toggleMobileMenu()">
+    <a (click)="scrollTo('help-center')" class="flex items-center gap-2 text-white text-lg font-semibold hover:text-[#141414] transition-colors" (click)="toggleMobileMenu()">
       Help
     </a>
   </div>
