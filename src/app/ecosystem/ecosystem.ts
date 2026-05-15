@@ -25,8 +25,7 @@ export class EcosystemComponent {
         {
           name: 'PT Sinar Mandala Teknologi',
           products: [
-            { name: 'Simantek', url: 'https://simantek.id/' },
-            { name: 'SoftwarePulsa IRSX', url: 'https://softwarepulsairsx.com/' }
+            { name: 'Simantek', url: 'https://simantek.id/' }
           ]
         },
         {

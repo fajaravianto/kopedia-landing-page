@@ -34,12 +34,6 @@ export class HomeComponent implements OnInit { // ⬅️ IMPLEMENTS ONINIT
       desc: 'Simantek is a cloud-based platform that provides mobile phone credit server services and serves as a solution for digital product businesses. With a fast, secure, and efficient system, Simantek helps entrepreneurs manage digital product transactions easily.'
     },
     {
-      id: 'irs',
-      name: 'Integrated Reload System',
-      logo: '/irs-logo.png',
-      desc: 'A reliable, high-transaction management solution. Handles mobile phone data traffic with maximum stability through an integrated backup-restore module and automated terminal.'
-    },
-    {
       id: 'irsmarket',
       name: 'IRS Market',
       logo: '/irsmarket-logo.png',
