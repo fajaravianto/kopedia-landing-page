@@ -1,4 +1,4 @@
-import { Component,HostListener } from '@angular/core';
+import { Component, HostListener } from '@angular/core'; 
 import { CommonModule } from '@angular/common';
 import { Router } from '@angular/router';
 import { NavbarComponent } from '../components/navbar/navbar';
@@ -12,14 +12,14 @@ import { NavbarComponent } from '../components/navbar/navbar';
 })
 export class ProductsComponent {
   
-  // Tambahkan variabel ini untuk mengatur status dropdown di HP
   isMobileCategoryOpen = false;
-
-  activeCategoryName = 'CATEGORIES';
+  activeCategoryName = 'CATEGORIES'; 
 
   constructor(private router: Router) {}
 
-  // Struktur Data Lengkap (Real + Dummy ala Zoho)
+  // ==============================================================
+  // Struktur Data Lengkap (100% English Version)
+  // ==============================================================
   productCategories = [
     {
       id: 'commerce',
@@ -27,12 +27,12 @@ export class ProductsComponent {
       products: [
         {
           name: 'Simantek',
-          description: 'Platform E-Commerce terintegrasi untuk mendigitalisasi bisnis Anda dengan mudah dan aman.',
+          description: 'Integrated E-Commerce platform to digitize your business operations easily and securely.',
           url: 'https://simantek.id/'
         },
         {
           name: 'IRS Market',
-          description: 'Marketplace B2B dengan konektivitas H2H terluas untuk kebutuhan produk digital.',
+          description: 'B2B Marketplace featuring the widest H2H connectivity for your digital product needs.',
           url: 'https://irsmarket.com/'
         }
       ]
@@ -41,78 +41,78 @@ export class ProductsComponent {
       id: 'sales',
       name: 'Sales',
       products: [
-        { name: 'Kopedia CRM', description: 'Comprehensive CRM platform for customer-facing teams.', url: '#' },
-        { name: 'Kopedia SalesIQ', description: 'Live chat app to engage and convert website visitors.', url: '#' }
+        { name: 'Kopedia CRM', description: 'Comprehensive CRM platform designed specifically for customer-facing teams.', url: '#' },
+        { name: 'Kopedia SalesIQ', description: 'Live chat application to engage and convert your website visitors in real-time.', url: '#' }
       ]
     },
     {
       id: 'marketing',
       name: 'Marketing',
       products: [
-        { name: 'Kopedia Campaigns', description: 'Create, send, and track effective email marketing campaigns.', url: '#' },
-        { name: 'Kopedia Social', description: 'All-in-one social media management for growing businesses.', url: '#' }
+        { name: 'Kopedia Campaigns', description: 'Create, send, and effortlessly track effective email marketing campaigns.', url: '#' },
+        { name: 'Kopedia Social', description: 'All-in-one social media management tool tailored for growing businesses.', url: '#' }
       ]
     },
     {
       id: 'service',
       name: 'Service',
       products: [
-        { name: 'Kopedia Desk', description: 'Help desk software to deliver top-tier customer support.', url: '#' },
-        { name: 'Kopedia Assist', description: 'Remote support and access software for IT teams.', url: '#' }
+        { name: 'Kopedia Desk', description: 'Advanced help desk software to deliver top-tier customer support experiences.', url: '#' },
+        { name: 'Kopedia Assist', description: 'Secure remote support and access software engineered for IT teams.', url: '#' }
       ]
     },
     {
       id: 'finance',
       name: 'Finance',
       products: [
-        { name: 'Kopedia Books', description: 'Powerful accounting platform for growing businesses.', url: '#' },
-        { name: 'Kopedia Invoice', description: 'Hassle-free invoicing and payment collection.', url: '#' }
+        { name: 'Kopedia Books', description: 'Powerful and intuitive accounting platform for modern, growing businesses.', url: '#' },
+        { name: 'Kopedia Invoice', description: 'Hassle-free invoicing, automated billing, and swift payment collection.', url: '#' }
       ]
     },
     {
       id: 'collaboration',
       name: 'Email & Collaboration',
       products: [
-        { name: 'Kopedia Mail', description: 'Secure, ad-free business email service for teams.', url: '#' },
-        { name: 'Kopedia WorkDrive', description: 'Online file management for teams to work together.', url: '#' }
+        { name: 'Kopedia Mail', description: 'Highly secure, ad-free business email service designed for professional teams.', url: '#' },
+        { name: 'Kopedia WorkDrive', description: 'Cloud-based file management system enabling seamless team collaboration.', url: '#' }
       ]
     },
     {
       id: 'hr',
       name: 'Human Resources',
       products: [
-        { name: 'Kopedia People', description: 'Organize, automate, and simplify your HR processes.', url: '#' },
-        { name: 'Kopedia Recruit', description: 'Applicant tracking system to hire the right talent.', url: '#' }
+        { name: 'Kopedia People', description: 'Organize, automate, and simplify all your complex HR processes from one dashboard.', url: '#' },
+        { name: 'Kopedia Recruit', description: 'Intelligent applicant tracking system to help you source and hire the right talent.', url: '#' }
       ]
     },
     {
       id: 'legal',
       name: 'Legal',
       products: [
-        { name: 'Kopedia Contracts', description: 'Comprehensive contract lifecycle management software.', url: '#' }
+        { name: 'Kopedia Contracts', description: 'Comprehensive contract lifecycle management software for legal compliance.', url: '#' }
       ]
     },
     {
       id: 'security',
       name: 'Security & IT',
       products: [
-        { name: 'Kopedia Vault', description: 'Secure password manager for teams and enterprises.', url: '#' },
-        { name: 'Kopedia MDM', description: 'Mobile Device Management for modern workplaces.', url: '#' }
+        { name: 'Kopedia Vault', description: 'Enterprise-grade secure password manager for remote teams and organizations.', url: '#' },
+        { name: 'Kopedia MDM', description: 'Robust Mobile Device Management solutions for modern and hybrid workplaces.', url: '#' }
       ]
     },
     {
       id: 'analytics',
       name: 'BI & Analytics',
       products: [
-        { name: 'Kopedia Analytics', description: 'Modern self-service BI and data analytics platform.', url: '#' }
+        { name: 'Kopedia Analytics', description: 'Modern self-service Business Intelligence and interactive data analytics platform.', url: '#' }
       ]
     },
     {
       id: 'projects',
       name: 'Project Management',
       products: [
-        { name: 'Kopedia Projects', description: 'Plan, track, and collaborate on projects effectively.', url: '#' },
-        { name: 'Kopedia Sprints', description: 'Agile project management for software development teams.', url: '#' }
+        { name: 'Kopedia Projects', description: 'Plan, track, and collaborate on complex projects efficiently and on schedule.', url: '#' },
+        { name: 'Kopedia Sprints', description: 'Agile project management ecosystem built specifically for software development teams.', url: '#' }
       ]
     },
     {
@@ -121,17 +121,17 @@ export class ProductsComponent {
       products: [
         {
           name: 'SoftwarePulsa IRSX',
-          description: 'Software manajemen server pulsa dan PPOB paling andal dengan uptime 99.9%.',
+          description: 'The most reliable credit server and PPOB management software ensuring 99.9% uptime.',
           url: 'https://softwarepulsairsx.com/'
         },
-        { name: 'Kopedia Creator', description: 'Low-code platform to build custom business applications.', url: '#' }
+        { name: 'Kopedia Creator', description: 'Intuitive low-code platform empowering you to build custom business applications.', url: '#' }
       ]
     },
     {
       id: 'iot',
       name: 'IoT',
       products: [
-        { name: 'Kopedia IoT Hub', description: 'Connect, manage, and scale your IoT devices securely.', url: '#' }
+        { name: 'Kopedia IoT Hub', description: 'Connect, manage, and scale your IoT devices securely across the global network.', url: '#' }
       ]
     }
   ];
@@ -141,9 +141,7 @@ export class ProductsComponent {
   }
 
   scrollToCategory(id: string) {
-
     this.isMobileCategoryOpen = false;
-
     const element = document.getElementById(id);
     if (element) {
       const y = element.getBoundingClientRect().top + window.scrollY - 120;
@@ -165,20 +163,18 @@ export class ProductsComponent {
   @HostListener('window:scroll', [])
   onWindowScroll() {
     let currentActive = 'CATEGORIES';
-    const scrollOffset = 250; // Jarak deteksi dari atas layar
+    const scrollOffset = 250; 
 
     for (const cat of this.productCategories) {
       const element = document.getElementById(cat.id);
       if (element) {
         const rect = element.getBoundingClientRect();
-        // Cek jika bagian atas dan bawah elemen ini sedang melintas di area pandang layar
         if (rect.top <= scrollOffset && rect.bottom >= scrollOffset) {
           currentActive = cat.name;
-          break; // Hentikan pencarian jika sudah ketemu
+          break; 
         }
       }
     }
-    // Update teks dropdown secara real-time
     this.activeCategoryName = currentActive;
   }
 }
