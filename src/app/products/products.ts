@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component,HostListener } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { Router } from '@angular/router';
 import { NavbarComponent } from '../components/navbar/navbar';
@@ -14,6 +14,8 @@ export class ProductsComponent {
   
   // Tambahkan variabel ini untuk mengatur status dropdown di HP
   isMobileCategoryOpen = false;
+
+  activeCategoryName = 'CATEGORIES';
 
   constructor(private router: Router) {}
 
@@ -141,7 +143,7 @@ export class ProductsComponent {
   scrollToCategory(id: string) {
 
     this.isMobileCategoryOpen = false;
-    
+
     const element = document.getElementById(id);
     if (element) {
       const y = element.getBoundingClientRect().top + window.scrollY - 120;
@@ -158,5 +160,25 @@ export class ProductsComponent {
         }
       }, 100);
     });
+  }
+
+  @HostListener('window:scroll', [])
+  onWindowScroll() {
+    let currentActive = 'CATEGORIES';
+    const scrollOffset = 250; // Jarak deteksi dari atas layar
+
+    for (const cat of this.productCategories) {
+      const element = document.getElementById(cat.id);
+      if (element) {
+        const rect = element.getBoundingClientRect();
+        // Cek jika bagian atas dan bawah elemen ini sedang melintas di area pandang layar
+        if (rect.top <= scrollOffset && rect.bottom >= scrollOffset) {
+          currentActive = cat.name;
+          break; // Hentikan pencarian jika sudah ketemu
+        }
+      }
+    }
+    // Update teks dropdown secara real-time
+    this.activeCategoryName = currentActive;
   }
 }

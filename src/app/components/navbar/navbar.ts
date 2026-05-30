@@ -56,16 +56,7 @@ export class NavbarComponent {
     }
   }
 
-  goToEcosystem() {
-    this.isMobileMenuOpen = false; 
-    if (this.router.url === '/ecosystem') {
-      window.scrollTo({ top: 0, behavior: 'smooth' });
-    } else {
-      this.router.navigate(['/ecosystem']).then(() => {
-        window.scrollTo({ top: 0, behavior: 'smooth' });
-      });
-    }
-  }
+  
 
   goToProducts() {
     this.isMobileMenuOpen = false;

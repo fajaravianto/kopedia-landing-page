@@ -10,10 +10,7 @@
       <a (click)="goToHome()" class="cursor-pointer hover:text-[#D56D43] transition-colors">Home</a>
     </li>
     <li class="cursor-pointer hover:text-[#D56D43] transition-colors">
-      <a (click)="goToProducts()" class="cursor-pointer hover:text-[#D56D43] transition-colors">Products</a>
-    </li>
-    <li class="cursor-pointer hover:text-[#D56D43] transition-colors">
-      <a (click)="goToEcosystem()" class="cursor-pointer hover:text-[#D56D43] transition-colors">Ecosystem</a>
+      <a (click)="goToProducts()" class="cursor-pointer hover:text-[#D56D43] transition-colors">Products & Services</a>
     </li>
     <li>
       <a (click)="scrollTo('customers-partners')" class="cursor-pointer hover:text-[#D56D43] transition-colors">Customers</a>
@@ -39,8 +36,7 @@
        [class.hidden]="!isMobileMenuOpen">
 
     <a (click)="goToHome()" class="text-white text-lg font-semibold hover:text-[#141414] transition-colors" (click)="toggleMobileMenu()">Home</a>
-    <a (click)="goToProducts()" class="text-white text-lg font-semibold hover:text-[#141414] transition-colors" (click)="toggleMobileMenu()">Products</a>
-    <a (click)="goToEcosystem()" class="text-white text-lg font-semibold hover:text-[#141414] transition-colors">Ecosystem</a>
+    <a (click)="goToProducts()" class="text-white text-lg font-semibold hover:text-[#141414] transition-colors" (click)="toggleMobileMenu()">Products & Services</a>
     <a (click)="scrollTo('customers-partners')" class="text-white text-lg font-semibold hover:text-[#141414] transition-colors" (click)="toggleMobileMenu()">Customers</a>
 
     <a (click)="scrollTo('help-center')" class="flex items-center gap-2 text-white text-lg font-semibold hover:text-[#141414] transition-colors" (click)="toggleMobileMenu()">
