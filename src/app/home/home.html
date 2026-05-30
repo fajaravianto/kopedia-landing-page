@@ -133,53 +133,6 @@
     </div>
   </section>
 
-<!-- ================= DIGITAL PRODUCTS SECTION ================= -->
-  <!-- Base background murni Cosmic Orange -->
-  <section id="digital-products" class="relative w-full py-20 px-6 md:px-16 z-20 bg-[#D56D43]">
-  <div class="max-w-6xl mx-auto">
-    
-    <div class="text-center mb-12 md:mb-16" data-aos="fade-up">
-      <h2 class="text-4xl md:text-5xl font-extrabold text-white">Our Products</h2>
-    </div>
-
-    <div data-aos="zoom-in" class="relative w-full bg-[#141414] rounded-none p-8 md:p-12 lg:p-16 flex flex-col md:flex-row items-center shadow-2xl min-h-87.5 transition-all duration-300">
-
-      <div class="w-full md:w-2/5 flex justify-center items-center mb-8 md:mb-0">
-        <img [src]="activeProduct.logo" [alt]="activeProduct.name" class="max-h-24 md:max-h-32 object-contain animate-fade-in">
-      </div>
-
-      <div class="hidden md:block w-px h-48 bg-[#D56D43] mx-8 lg:mx-12 opacity-80"></div>
-      <div class="block md:hidden w-full h-px bg-[#D56D43] my-6 opacity-80"></div>
-
-      <div class="w-full md:w-3/5 text-center md:text-left flex flex-col justify-center">
-        <h3 class="text-2xl md:text-3xl font-bold text-white mb-4 animate-fade-in">{{ activeProduct.name }}</h3>
-        <p class="text-gray-300 text-base md:text-lg leading-relaxed font-light animate-fade-in">
-          {{ activeProduct.desc }}
-        </p>
-      </div>
-
-    </div>
-
-    <div data-aos="fade-up" data-aos-delay="200" class="mt-12 md:mt-16 w-full">      
-      
-      <div class="flex flex-wrap justify-center items-center gap-8 md:gap-16 lg:gap-24 w-full">
-        
-        @for (product of digitalProducts; track product.id) {
-          
-          <button (click)="selectProduct(product)"
-                  class="bg-transparent transition-all duration-300 outline-none cursor-pointer flex items-center justify-center border-none p-0"
-                  [ngClass]="activeProduct.id === product.id ? 'scale-110 opacity-100 grayscale-0 drop-shadow-md' : 'opacity-60 hover:opacity-100 hover:scale-105 grayscale hover:grayscale-0'">
-            <img [src]="product.logo" [alt]="product.name" class="h-10 md:h-12 lg:h-14 w-auto object-contain">
-          </button>
-
-        }
-      </div>
-
-    </div>
-
-  </div>
-</section>
-
   <!-- ================= CUSTOMERS & PARTNERS SECTION ================= -->
   <section id="customers-partners" class="w-full py-24 bg-[#141414] text-white border-t border-white/5">
     <div class="max-w-350 mx-auto px-6 md:px-12 flex flex-col xl:flex-row gap-16 xl:gap-0">

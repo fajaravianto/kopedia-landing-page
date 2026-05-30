@@ -1,0 +1,16 @@
+/* Styling Scrollbar Vertikal Elegan Khusus Desktop */
+@media (min-width: 768px) {
+  .custom-scrollbar::-webkit-scrollbar {
+    width: 4px; /* Dibuat sangat tipis agar minimalis */
+  }
+  .custom-scrollbar::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  .custom-scrollbar::-webkit-scrollbar-thumb {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+  }
+  .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+    background-color: #D56D43; /* Menyala menjadi cosmic orange saat di-hover */
+  }
+}

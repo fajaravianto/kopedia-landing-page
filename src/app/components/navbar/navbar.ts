@@ -66,4 +66,11 @@ export class NavbarComponent {
       });
     }
   }
+
+  goToProducts() {
+    this.isMobileMenuOpen = false;
+    this.router.navigate(['/products']).then(() => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+  }
 }
